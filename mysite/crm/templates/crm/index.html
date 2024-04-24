@@ -1,0 +1,194 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personnel</title>
+    {% tailwind_css %}
+  </head>
+  <body>
+    <header>
+      <div class="bg-[url('https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=400')] bg-center bg-cover px-28 py-5 transition duration-300 transform rounded shadow-black shadow-lg shadow-2xl">
+        <nav class="flex items-center">
+          <h1 class="text-3xl text-blue-800 font-bold">Yan & Daph</h1>
+          <ul class="flex-1 text-center font-semibold">
+            <li class="list-none inline-block px-5">
+              <a href="#" class="no-underline text-white px-2 hover:text-blue-700">Accueil</a>
+            </li>
+            <li class="list-none inline-block px-5">
+              <a href="{% url 'actualite' %}" class="no-underline text-white px-2 hover:text-blue-700">Actualité</a>
+            </li>
+            <li class="list-none inline-block px-5 relative group">
+              <a href="" class="no-underline text-white px-2 hover:text-blue-700">Biographie</a>
+              <ul class="absolute hidden transition-opacity duration-300 bg-black bg-opacity-50 text-white font-semibold space-y-2 group-hover:block rounded shadow-2xl mt-2 w-40">
+                <li class="hover:bg-yellow-300">
+                  <a href="#">Parcours Academique</a>
+                </li>
+                <li class="hover:bg-yellow-300">
+                  <a href="#">Parcours Professionel</a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-none inline-block px-5 relative group">
+                <a href="" class="no-underline text-white px-2 hover:text-blue-700">Projets</a>
+                <ul class="absolute hidden transition-opacity duration-300 bg-black bg-opacity-50 text-white font-semibold space-y-2 group-hover:block rounded shadow-2xl mt-2 w-40">
+                  <li class="hover:bg-blue-700">
+                    <a href="#">Réalisé</a>
+                  </li>
+                  <li class="hover:bg-blue-700">
+                    <a href="#">En cours</a>
+                  </li>
+                  <li class="hover:bg-blue-700">
+                    <a href="#">Perfectif futur</a>
+                  </li>
+                </ul>
+              </li>
+            <li class="list-none inline-block px-5 relative group">
+              <a href="{% url 'contact' %}" class="no-underline text-white px-2 hover:text-blue-700">Contact</a>
+              <ul class="absolute hidden transition-opacity duration-300 bg-black bg-opacity-50 text-white font-semibold space-y-2 group-hover:block rounded shadow-2xl mt-2 w-40">
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="text-white mt-48 max-w-xl">
+          <h1 class="text-6xl font-semibold leanding-normal">Bienvenu chez<br />YAN & <span class="font-light">DAPH</span></h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In illo expedita explicabo ducimus laborum sapiente quas.</p>
+          <div class="mt-10">
+            <a href="{% url 'contact' %}" class="bg-blue-700 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-blue-700 hover:text-white duration-300 hover:border border border-transparent">Contactez-nous<span class="text-lg inline-block rotate-90">&#10148;</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="grid gap-5 row-gap-8 lg:grid-cols-2">
+        <div class="flex flex-col justify-center">
+          <div class="max-w-xl mb-6">
+            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              C'est quoi, L'informatique<br class="hidden md:block" />
+              d'apres eux ?
+              <span class="relative px-1">
+                <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400"></div>
+                <span class="relative inline-block text-deep-purple-accent-400">Ecoutez et lisez</span>
+              </span>
+            </h2>
+            <p class="text-base text-gray-700 md:text-lg">Dans le monde en constante évolution de l'informatique, les frontières entre le virtuel et le réel s'estompent. Des lignes de code complexes donnent vie à des univers numériques, tandis que des algorithmes sophistiqués façonnent notre compréhension du monde qui nous entoure.</p>
+          </div>
+          <div class="grid gap-5 row-gap-8 sm:grid-cols-2">
+            <div class="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
+              <div class="h-full p-5 border border-l-0 rounded-r">
+                <h6 class="mb-2 font-semibold leading-5">L'informatique, bien plus qu'une simple discipline académique,</h6>
+                <p class="text-sm text-gray-900">À l'origine, l'informatique était limitée à de simples calculs mathématiques.</p>
+              </div>
+            </div>
+            <div class="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
+              <div class="h-full p-5 border border-l-0 rounded-r">
+                <h6 class="mb-2 font-semibold leading-5">Dans cet univers numérique</h6>
+                <p class="text-sm text-gray-900">Des lignes de code écrites par des programmeurs du monde entier dictent le comportement des logiciels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96" src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="" />
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="bg-gray-900">
+            <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+              <div class="grid row-gap-10 mb-8 lg:grid-cols-6">
+                <div class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+                  <div>
+                    <p class="font-medium tracking-wide text-gray-300">Menu</p>
+                    <ul class="mt-2 space-y-2">
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Accueil</a>
+                      </li>
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Actualités</a>
+                      </li>
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Biographie</a>
+                      </li>
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Projets</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="font-medium tracking-wide text-gray-300">Sous menu</p>
+                    <ul class="mt-2 space-y-2">
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Parcours Academique</a>
+                      </li>
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Parcours Professionel</a>
+                      </li>
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Projet Realisé</a>
+                      </li>
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Projet en cours</a>
+                      </li>
+                      <li>
+                        <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200">Perfectif Future</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="md:max-w-md lg:col-span-2">
+                  <span class="text-base font-medium tracking-wide text-gray-300">Contactez-nous</span>
+                  <form class="flex flex-col mt-4 md:flex-row">
+                    <input
+                      placeholder="Mail"
+                      required=""
+                      type="text"
+                      class="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                    />
+                    <button
+                      type="submit"
+                      class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    >
+                      Envoyer 
+                    </button>
+                  </form>
+                  <p class="mt-4 text-sm text-gray-500">
+                    Salut voici le fameux ddr de django.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col justify-between pt-5 pb-10 border-t border-gray-800 sm:flex-row">
+                <p class="text-sm text-gray-500">
+                  © Copyright 2024 DDR DJANGO. All rights reserved.
+                </p>
+                <div class="flex items-center mt-4 space-x-4 sm:mt-0">
+                  <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                      <path
+                        d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                    <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                      <circle cx="15" cy="15" r="4"></circle>
+                      <path
+                        d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-teal-accent-400">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                      <path
+                        d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+  </body>
+</html>
